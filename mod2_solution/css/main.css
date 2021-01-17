@@ -1,0 +1,79 @@
+/********** Base styles **********/
+*{
+    box-sizing:border-box;
+    font-family: Helvetica;
+}
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size:1.75em
+
+  }
+  
+  section {
+    border: 1px solid black;
+    margin-bottom: 15px;
+    float: left;
+    margin-right: auto;
+    margin-left:2.5%;
+    margin-top: 0px;
+    position: relative;
+    background-color:rgb(68, 130, 155);
+    width: 30%;
+    
+  } 
+
+  .title{
+    margin:0px;
+    position: absolute;
+    padding-left:25px;
+    padding-right:25px;
+    margin-right:-15px;
+    right: 15px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    font-size: 1.25em;
+    
+  }
+  .desc{
+      padding: 15px
+      
+  }
+#p1{
+    background-color: indianred
+}
+#p2{
+    background-color: rgb(111, 205, 92)
+}
+#p3{
+    background-color: rgb(92, 103, 205)
+}
+
+  /********** Large devices only **********/
+  @media (min-width: 992px) {
+    section {
+    width: 30%;
+    }
+    }
+  
+  
+  
+  /********** Medium devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    section {
+      width: 46%;
+    }
+    section:nth-last-child(1):nth-last-child(odd){
+          width: 94.5%;
+    }
+    }
+      /********** Mobile devices only **********/
+  @media (max-width: 767px) {
+    section {
+        width: 95%;
+        margin-right: 2.5%;
+      }
+     
+  }
+  
+  
